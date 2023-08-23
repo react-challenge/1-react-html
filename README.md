@@ -1,3 +1,36 @@
+# react-html
+
+🍉🍉🍉 use react in pure html files
+
+## base demo
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>react html</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function MyApp() {
+        return <h1>Hello, world!</h1>;
+      }
+      const container = document.getElementById("root");
+      const root = ReactDOM.createRoot(container);
+      root.render(<MyApp />);
+    </script>
+  </body>
+</html>
+```
+
+## Component & Form
+
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -89,3 +122,4 @@
     </script>
   </body>
 </html>
+```
